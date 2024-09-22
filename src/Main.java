@@ -38,12 +38,8 @@ public class Main {
 
         System.out.println("Задача 4");
         char [] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int lenght = reverseFullName.length;
-        for ( int i = 0; i < lenght / 2; i++){
-            char cash = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[lenght -1 - i];
-            reverseFullName[lenght - 1 - i] = cash;
+        for (int i = reverseFullName.length-1; i >= 0 ; i--) {
+            System.out.print(reverseFullName[i]);
         }
-        System.out.println(reverseFullName);
     }
 }
